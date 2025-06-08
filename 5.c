@@ -12,7 +12,8 @@ case '*': return op1*op2;
 break; 
 case '/': return op1/op2; 
 break; 
-case '$': return op1+op2; 
+case '$':  
+case '^': return pow(op1,op2); 
 break; 
 default: return 0; }} 
 void main() { 
